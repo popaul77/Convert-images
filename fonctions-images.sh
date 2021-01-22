@@ -1,6 +1,10 @@
 #!/bin/bash
-#
+#------------------------------------------------------------------------------#
 # Ensemble de fonctions pour modifier et optimiser des Images.
+# Origine des fonctions
+# https://css-tricks.com/converting-and-optimizing-images-from-the-command-line/
+# jpg.
+#
 #
 # Necessite l 'installation de imagemagik, webp jpegoptim, optipng
 # apt-get update
