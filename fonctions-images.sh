@@ -11,6 +11,8 @@
 # apt-get install imagemagick webp jpegoptim optipng
 # apt install npm
 # npm install -g svgexport svgo (j'ai eu des erreurs lors de l'install de svgexport, a tester)
+# https://github.com/shakiba/svgexport
+# https://github.com/svg/svgo
 # Il sera bien de créer un menu pour faciliter l'usage de ces fonctions.
 #------------------------------------------------------------------------------#
 
