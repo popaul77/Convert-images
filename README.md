@@ -16,7 +16,7 @@ https://github.com/svg/svgo
 
 Il sera bien de créer un menu pour faciliter l'usage de ces fonctions.<br>
 
-______________________________________________________________________________
+_______________________
 
 Set of functions to modify and optimize Images.<br>
 Origin of functions<br>
