@@ -1,6 +1,9 @@
 #!/bin/bash
-sources convert-fonctions.sh
+clear
+
+source convert-fonctions.sh
 source couleurs
+
 
 # Fonctions du menu
 
@@ -15,6 +18,37 @@ function press_enter() {
   clear
 }
 
+function origine ()
+{
+  echo -ne "Dossier des images a traiter (mettre '.' si vous etes dans le dossier) : "
+	read DIR
+  echo ""
+}
+function origine1 ()
+{
+  echo -ne "Dossiers des images a traiter (ex png,jpeg,webp) : "
+	read DIR1
+  echo ""
+}
+function destination ()
+{
+  echo -ne "Destination des images a traiter (ex: ma_destination)) : "
+	read DST
+  echo ""
+}
+
+function taille ()
+{
+  echo -ne "Taille de l'image finale (ex: 512) : "
+	read SIZE
+  echo ""
+}
+function qualite ()
+{
+  echo -ne "Qualité de l'image finale (ex: 90) : "
+	read QUALITY
+  echo ""
+}
 function menu(){
 echo -ne " Menu Conversion/Optimisation d'images jpg, png, webp, svg.
         $(ColorGreen '1)') Tri des images en fonction de leurs extension.
@@ -41,19 +75,19 @@ echo -ne " Menu Conversion/Optimisation d'images jpg, png, webp, svg.
 
         read a
         case $a in
-	        1) organise-images ; menu ;;
-	        2) webp2png ; menu ;;
-	        3) jpg2png ; menu ;;
-          4) svg2png ; menu ;;
-	        5) png2jpg ; menu ;;
-	        6) webp2jpg ; menu ;;
-          7) svg2jpg ; menu ;;
-	        8) png2webp ; menu ;;
-	        9) jpg2webp ; menu ;;
-          10) combine-images ; menu ;;
-	        11) optimise-svg ; menu ;;
-	        12) optimise-png ; menu ;;
-          13) optimise-jpg ; menu ;;
+	        1) origine; organise-images $DIR; menu ;;
+	        2) origine; webp2png $DIR; menu ;;
+	        3) origine; jpg2png $DIR; menu ;;
+          4) origine; svg2png $DIR ; menu ;;
+	        5) origine; qualite; png2jpg $DIR $QUALITY; menu ;;
+	        6) origine; qualite; webp2jpg $DIR $QUALITY; menu ;;
+          7) origine; taille; qualite; svg2jpg $DIR $SIZE $QUALITY; menu ;;
+	        8) origine; qualite; png2webp $DIR $QUALITY; menu ;;
+	        9) origine; qualite; jpg2webp $DIR $QUALITY; menu ;;
+          10) origine1; destination; combine-images $DIR1 $DST ; menu ;;
+	        11) destination; optimise-svg $DST; menu ;;
+	        12) destination; optimise-png $DST; menu ;;
+          13) destination; qualite; optimise-jpg $DST $QUALITY; menu ;;
 		      0) exit 0 ;;
           * ) clear ; incorrect_selection ; press_enter ;;
         esac
