@@ -14,7 +14,8 @@ npm install -g svgexport svgo (j'ai eu des erreurs lors de l'install de svgexpor
 https://github.com/shakiba/svgexport<br>
 https://github.com/svg/svgo
 
-Il sera bien de créer un menu pour faciliter l'usage de ces fonctions.<br>
+Un menu permet d'utiliser les fonctions.<br>
+Un dossier images permet de tester le bon deroulement des scripts.
 
 _______________________
 
@@ -32,6 +33,7 @@ npm install -g svgexport svgo (I had errors when installing svgexport, to test)<
 https://github.com/shakiba/svgexport<br>
 https://github.com/svg/svgo
 
-It will be good to create a menu to facilitate the use of these functions.
+A menu allows you to use the functions. <br>
+An images folder is used to test the correct operation of the scripts.
 
 jpg
