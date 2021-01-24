@@ -32,7 +32,7 @@ function webp2png() # webp2png webp
 input_dir="$1"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 fi
 
@@ -49,7 +49,7 @@ function jpg2png () # jpg2png jpeg
 input_dir="$1"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 fi
 
@@ -67,7 +67,7 @@ input_dir="$1"
 width="$2"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$width" ]]; then
   echo "Preciser la largeur de l'image finale."
@@ -89,7 +89,7 @@ input_dir="$1"
 quality="$2"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$quality" ]]; then
   echo "Preciser la qualité de l'image finale."
@@ -110,7 +110,7 @@ input_dir="$1"
 quality="$2"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$quality" ]]; then
   echo "Preciser la qualité de l'image finale."
@@ -132,7 +132,7 @@ width="$2"
 quality="$3"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$width" ]]; then
   echo "Preciser la largeur de l'image finale."
@@ -157,7 +157,7 @@ input_dir="$1"
 quality="$2"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$quality" ]]; then
   echo "Preciser la qualité de l'image finale."
@@ -178,7 +178,7 @@ input_dir="$1"
 quality="$2"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$quality" ]]; then
   echo "Preciser la qualité de l'image finale."
@@ -204,7 +204,7 @@ input_dirs="$1"
 output_dir="$2"
 
 if [[ -z "$input_dirs" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$output_dir" ]]; then
   echo "Preciser le dossier de destination."
@@ -231,7 +231,7 @@ function optimise-svg () # optimise-svg destination-images
 input_dir="$1"
 
 if [[ -z "$input_dir" ]]; then
-echo "Preciser le dossier de départ."
+echo "Preciser le dossier a traiter."
 exit 1
 fi
 
@@ -248,7 +248,7 @@ function optimise-png ()  # optimise-png destination-images
 input_dir="$1"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 fi
 
@@ -269,7 +269,7 @@ input_dir="$1"
 quality="$2"
 
 if [[ -z "$input_dir" ]]; then
-  echo "Preciser le dossier de départ."
+  echo "Preciser le dossier a traiter."
   exit 1
 elif [[ -z "$quality" ]]; then
   echo "Preciser la qualité de l'image finale."
