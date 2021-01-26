@@ -60,7 +60,7 @@ echo -ne " Menu Conversion/Optimisation d'images jpg, png, webp, svg.
         $(ColorGreen '5)') Convertir images .png en .jpg
         $(ColorGreen '6)') Convertir images .webp en .jpg
         $(ColorGreen '7)') Convertir images .svg en .jpg
-        echo "__Convertir en .Webp__"
+        __Convertir en .Webp__
         $(ColorGreen '8)') Convertir images .png en .webp
         $(ColorGreen '9)') Convertir images .jpg en .webp
         echo "___Rassembler images dans un seul dossier___"
